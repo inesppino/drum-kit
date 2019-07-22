@@ -1,4 +1,9 @@
 {
+  "audio": {
+    "src": "_src/assets/audio/*.*",
+    "dest": "public/assets/audio/",
+    "dist": "docs/assets/audio/"
+  },
   "icons": {
     "src": "_src/assets/icons/*.*",
     "dest": "public/",
