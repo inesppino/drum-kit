@@ -46,26 +46,18 @@
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="65" src="assets/audio/clap.wav"></audio>
+  <audio data-key="83" src="assets/audio/hihat.wav"></audio>
+  <audio data-key="68" src="assets/audio/kick.wav"></audio>
+  <audio data-key="70" src="assets/audio/openhat.wav"></audio>
+  <audio data-key="71" src="assets/audio/boom.wav"></audio>
+  <audio data-key="72" src="assets/audio/ride.wav"></audio>
+  <audio data-key="74" src="assets/audio/snare.wav"></audio>
+  <audio data-key="75" src="assets/audio/tom.wav"></audio>
+  <audio data-key="76" src="assets/audio/tink.wav"></audio>
 
-<script>
-  window.addEventListener('keydown', function(e){
-      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-      if(!audio) return;
-      audio.currentTime = 0;
-      audio.play();
-      key.classList.toggle('playing');
-  });
-</script>
+
+  <script type="text/javascript" src="../assets/js/main.js"></script>
 
 
 </body>
